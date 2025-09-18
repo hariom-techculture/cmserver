@@ -49,7 +49,14 @@ const app = express();
 // );
 app.use(
   cors({
-    origin: ["http://157.245.105.212:3001", "http://157.245.105.212:3000"],
+    origin: [
+      "http://localhost:3005",
+      "http://localhost:3000",
+      "https://cmbhartidasboard.netlify.app",
+      "https://cmdasboard.netlify.app",
+      "https://cmadmindashboard.netlify.app",
+      "https://uttarakhandcmdashboard.netlify.app",
+    ],
     credentials: true,
   })
 );
